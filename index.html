@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/loho-mariano-dev-fondo-negro.png" />
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
+    <script defer src="./skills.js"></script>
+    <script defer src="./menu-hambur.js"></script>
+    <script defer src="./skills-mobile.js"></script>
+
+    <title>MEGAGIM</title>
+  </head>
+  <body>
+    <a href="#header">
+      <button class="arrow-sky"> 
+        <!--Flecha fija que vuelve arriba-->
+        <img
+          class="arrow-sky__img"
+          src="./img/flechaArriba.png"
+          alt="Al cielo"
+        />Inicio
+      </button>
+    </a>
+    <!--Logo de la barra-->
+    <div id="header" class="header">
+      <div class="header__visible">
+        <div class="header__visible__logo-container">
+          <img
+            class="header__visible__logo-container__logo"
+            src="./img/logo.png"
+            alt="Logo Megagim"
+          />
+        </div>
+        <div class="header__links">
+          <a href="#sobre-mi">
+            <button class="header__links__link">Sobre nosotros</button>
+          </a>
+          <a href="#skills">
+            <button class="header__links__link" href="" target="">
+              Entrenamientos
+            </button>
+          </a>
+          <a href="#projects">
+            <button class="header__links__link" href="" target="">
+              Nuestra comunidad
+            </button>
+          </a>
+          <a href="#contacto">
+            <button class="header__links__link cerrar-sesion" href="" target="">
+              Contactanos
+            </button>
+          </a>
+        </div>
+        <div class="header__visible__boton-desplegar-container">
+          <button class="header__visible__boton-desplegar">
+            <div class="header__visible__boton-desplegar__barras">Menú</div>
+            <div class="header__visible__boton-desplegar__barras"></div>
+            <div class="header__visible__boton-desplegar__barras"></div>
+          </button>
+        </div>
+      </div>
+      <div class="ventana-links">
+        <button class="ventana-links__boton-cerrar">x</button>
+        <a class="ventana-links__link link-uno" href="#sobre-mi"
+          >Sobre Nosotros</a
+        >
+        <a class="ventana-links__link link-dos" href="#skills"
+          >Entrenamientos</a
+        >
+        <a class="ventana-links__link link-tres" href="#projects"
+          >Nuestra comunidad</a
+        >
+        <a
+          class="ventana-links__link link-cuatro cerrar-sesion-ventana"
+          href="#contacto"
+          >Contactanos</a
+        >
+      </div>
+    </div>
+
+    <!--PAGINA DE BIENVENIDA-->
+    <section id="pagina-inicio" class="pagina-inicio">
+      <div class="pagina-inicio__container">
+        <div class="pagina-inicio__container__title-container">
+          <h2 class="pagina-inicio__container__title-container__title">
+            ¡BIENVENIDOS A MEGAGIM!
+          </h2>
+        </div>
+        <div class="pagina-inicio__container__info-container">
+          
+            <h3
+              class="pagina-inicio__container__info-container__text-title-container__texto"
+            >
+            Somos tu entrenador personal. Donde el fitness es una comunidad.
+            </h3>
+
+           
+            <h3
+              class="pagina-inicio__container__info-container__text-title-container__texto"
+            >
+            ¡La vida en movimiento es vida en plenitud!
+            </h3>
+          
+        </div>
+      </div>
+    </section>
+    <main class="hero-container">
+      <h1 class="hero-container__title">¡Motivate a entrenar!</h1>
+      <div class="hero-container__title-subtitle__container">
+          <h3
+              class="hero-container__title-subtitle"
+            >
+              Cada paso cuenta, ¡sé activo!
+            </h3>
+
+      </div>
+        
+      <!--  <video
+        autoplay
+        loop
+        muted
+        src="https://drive.google.com/file/d/1BECDw7HHPyl2KIL_qaSK6IZ9k7M2bt2F/view?usp=drive_link"
+        class="hero-container__video"
+      ></video> -->
+      <!--
+          <iframe
+        class="hero-container__video video-frame"
+        src="https://www.youtube.com/embed/eHoy_0R9s-Q?autoplay=1&mute=1&loop=1&controls=0"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+
+       <iframe
+        class="hero-container__video video-frame"
+        src="https://drive.google.com/file/d/1BECDw7HHPyl2KIL_qaSK6IZ9k7M2bt2F/preview"
+        allow="autoplay"
+      ></iframe>
+      -->
+
+      <!-- Video del inicio -->
+      <iframe
+        class="hero-container__video video-frame"
+        src="./img/abuelitosGim.mp4"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+    </main>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="sobre-mi__container">
+        <div class="sobre-mi__container__title-container">
+          <h2 class="sobre-mi__container__title-container__title">
+            SOBRE NOSOTROS
+          </h2>
+        </div>
+        <div class="sobre-mi__container__info-container">
+            <p
+              class="sobre-mi__container__info-container__text-title-container__texto"
+            >
+            En MegaGim, nos enfocamos en promover una vida activa y saludable para los adultos. Nuestra instalación está diseñada para brindar un ambiente acogedor y motivador, donde encontrarás programas de entrenamiento adaptados a tus necesidades, asi como programas online. 
+            
+            Ofrecemos una variedad de actividades, desde ejercicios de bajo impacto hasta entrenamientos de fuerza diseñados especialmente para fortalecer músculos y huesos. Nuestros entrenadores altamente capacitados te guiarán en cada sesión, asegurando un ejercicio seguro y efectivo. Únete a nuestra comunidad comprometida y descubre cómo podemos acompañarte en tu viaje hacia una vida más activa y plena.
+            </p>
+            <img class="imagenQuienesSomos" src="img/abuelitos.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--Entrenamientos  -->
+
+    <section id="skills" class="skills">
+      <div class="skills__container">
+        <h2 class="skills__container__title">ENTRENAMIENTOS</h2>
+        <div class="skills__container__flechitas-skills">
+          <img
+            class="skills__container__anterior-skills"
+            src="./img/flecha-rigth.png"
+            alt="siguiente"
+          />
+          <div class="skills__container__carrucel">
+            <div class="skills__container__two-cards">
+              <div class="card-skill">
+                <img
+                  class="card-skill__img"
+                  src="./img/abuelitosafuera.png"
+                  alt="Imagen de habilidades"
+                />
+                <h4 class="card-skill__title">Al aire libre</h4>
+                <h4 class="card-skill__title">$8000</h4>
+                <h4 class="card-skill__description-container__description">Sin limite de edad, se solicita certificado medico.</h4>
+                <div class="card-skill__description-container">
+                  <p class="card-skill__description-container__description">
+                    Disfruta de la belleza de la naturaleza mientras trabajas en
+                    tu salud. Nuestros entrenamientos al aire libre te llevarán
+                    a parques cercanos, senderos y áreas verdes para que te
+                    ejercites en un entorno refrescante y estimulante.
+                    ¡Conéctate con la naturaleza mientras te pones en forma!
+                  </p>
+                </div>
+              </div>
+              <div class="card-skill">
+                <img
+                  class="card-skill__img"
+                  src="./img/engim.png"
+                  alt="Imagen de habilidades"
+                />
+                <h4 class="card-skill__title">En nuestro gimnasio</h4>
+                <h4 class="card-skill__title">$8500</h4>
+                <h4 class="card-skill__description-container__description">Sin limite de edad, se solicita certificado medico.</h4>
+                <div class="card-skill__description-container">
+                  <p class="card-skill__description-container__description">
+                    Nuestras instalaciones de vanguardia te ofrecen acceso a
+                    equipos de última generación y entrenadores expertos. Ya sea
+                    que busques aumentar tu fuerza, mejorar tu resistencia,
+                    mejorar la forma en que haces tus actividades diarias o
+                    lograr tus objetivos de pérdida de peso, nuestro gimnasio
+                    tiene todo lo que necesitas. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="skills__container__two-cards">
+              <div class="card-skill">
+                <img
+                  class="card-skill__img"
+                  src="./img/abuelitosOnline.png"
+                  alt="Imagen de habilidades"
+                />
+                <h4 class="card-skill__title">Entrenamientos Online</h4>
+                <h4 class="card-skill__title">$7000</h4>
+                <h4 class="card-skill__description-container__description">Sin limite de edad, se solicita certificado medico.</h4>
+                <div class="card-skill__description-container">
+                  <p class="card-skill__description-container__description">
+                    Descubre la libertad de un estilo de vida saludable con
+                    nuestro Programa de Entrenamiento Online. Ejercicios
+                    personalizados, expertos acompañándote, ¡todo desde la
+                    comodidad de tu hogar o cualquier lugar que elijas! Alcanza
+                    tus objetivos con facilidad.
+                  </p>
+                </div>
+              </div>
+              <div class="card-skill">
+                <img
+                  class="card-skill__img"
+                  src="./img/funcionalAbuelitos.png"
+                  alt="Imagen de habilidades"
+                />
+                <h4 class="card-skill__title">
+                  Funcional para adultos mayores.
+                </h4>
+
+                <h4 class="card-skill__title">$6000</h4>
+                <h4 class="card-skill__description-container__description">Sin limite de edad, se solicita certificado medico.</h4>
+                <div class="card-skill__description-container">
+                  <p class="card-skill__description-container__description">
+                    Priorizamos el bienestar integral en la edad dorada con un
+                    enfoque personalizado en el ejercicio. Únete a nuestro
+                    programa para un envejecimiento activo y saludable.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="skills__container__siguiente-skills"
+            src="./img/flecha-rigth.png"
+            alt="siguiente"
+          />
+        </div>
+      </div>
+<!--ENTRENAMIENTOS MOBILE-->
+      <div class="skills__container-mobile">
+        <h2 class="skills__container__title-mobile">ENTRENAMIENTOS</h2>
+        <div class="skills__container__flechitas-skills-mobile">
+          <img
+            class="skills__container__anterior-skills-mobile"
+            src="./img/flecha-rigth.png"
+            alt="siguiente"
+          />
+          <div class="skills__container__carrucel-mobile">
+            <div class="card-skill-mobile">
+              <img
+                class="card-skill__img-mobile"
+                src="./img/abuelitosafuera.png"
+                alt="Imagen de habilidades"
+              />
+              <h4 class="card-skill__title-mobile">Al aire libre</h4>
+              <h4 class="card-skill__title">$8000</h4>  
+              <h4 class="card-skill__description-container__description-mobile">Sin limite de edad, se solicita certificado medico.</h4> 
+              <div class="card-skill__description-container-mobile">
+                <p
+                  class="card-skill__description-container__description-mobile"
+                >
+                Disfruta de la naturaleza mientras trabajas en
+                tu salud. Nuestros entrenamientos al aire libre despejan tu mente y se ocupan de tu cuerpo,
+                ejercitate en un entorno refrescante y estimulante.
+                 
+                </p>
+              </div>
+            </div>
+            <div class="card-skill-mobile">
+              <img
+                class="card-skill__img-mobile"
+                src="./img/engim.png"
+                alt="Imagen de habilidades"
+              />
+              <h4 class="card-skill__title-mobile">En nuestro gimnasio</h4>
+              <h4 class="card-skill__title">$8500</h4> 
+              <h4 class="card-skill__description-container__description-mobile">Sin limite de edad, se solicita certificado medico.</h4> 
+              <div class="card-skill__description-container-mobile">
+                <p
+                  class="card-skill__description-container__description-mobile"
+                >
+                Nuestras instalaciones te ofrecen acceso a
+                equipos fitness y entrenadores expertos. Logra los objetivos que tenes en mente, nuestro gimnasio
+                tiene todo lo que necesitas.
+                </p>
+              </div>
+            </div>
+            <div class="card-skill-mobile">
+              <img
+                class="card-skill__img-mobile"
+                src="./img/abuelitosOnline.png"
+                alt="Imagen de habilidades"
+              />
+              <h4 class="card-skill__title-mobile">Entrenamientos desde tu casa</h4>
+              <h4 class="card-skill__title">$7000</h4> 
+              <h4 class="card-skill__description-container__description-mobile">Sin limite de edad, se solicita certificado medico.</h4>
+              <div class="card-skill__description-container-mobile">
+                <p
+                  class="card-skill__description-container__description-mobile"
+                >
+                Descubre la libertad de un estilo de vida saludable con
+                nuestro programa de entrenamiento en casa. Ejercicios
+                personalizados, expertos acompañándote, ¡todo desde la
+                comodidad de tu hogar o cualquier lugar que elijas! Alcanza
+                tus objetivos con facilidad.
+                </p>
+              </div>
+            </div>
+            <div class="card-skill-mobile">
+              <img
+                class="card-skill__img-mobile"
+                src="./img/funcionalAbuelitos.png"
+                alt="Imagen de habilidades"
+              />
+              <h4 class="card-skill__title-mobile">Funcional para adultos mayores.</h4>
+              <h4 class="card-skill__title">$7000</h4> 
+              <h4 class="card-skill__description-container__description-mobile">Sin limite de edad, se solicita certificado medico.</h4>
+              <div class="card-skill__description-container-mobile">
+                <p
+                  class="card-skill__description-container__description-mobile"
+                >
+                Priorizamos el bienestar integral en la edad dorada con un
+                enfoque personalizado en el ejercicio. Únete a nuestro
+                programa para un envejecimiento activo y saludable.
+                </p>
+              </div>
+            </div>
+
+          
+          </div>
+          <img
+            class="skills__container__siguiente-skills-mobile"
+            src="./img/flecha-rigth.png"
+            alt="siguiente"
+          />
+        </div>
+      </div>
+
+
+
+ </section>
+     
+
+
+    <!--NUESTRA COMUNIDAD-->
+    <section id="projects" class="projects">
+      <div class="projects__container">
+        <h3 class="projects__container__title">NUESTRA COMUNIDAD</h3>
+        <div class="projects__container__flechitas-carrusell">
+          <img
+            class="projects__container__anterior"
+            src="./img/flecha-rigth.png"
+            alt="siguiente"
+          />
+
+          <div class="projects__container__carrucel-container">
+            <div class="card-project__container">
+              <div class="card-project__container__img-link-container">
+                <img
+                  class="card-project__container__img-link-container__img video-frame"
+                  src="img/comunidad 2.jpg"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                >
+                </img>
+                <a
+                  class="card-project__container__img-link-container__link"
+                
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Javi participando en la carrera de 21k. Un capo!!</a
+                >
+              </div>
+              
+            </div>
+            <div class="card-project__container">
+              <div class="card-project__container__img-link-container">
+                <img
+                  class="card-project__container__img-link-container__img video-frame"
+                  src="img/comunidad 3.jpg"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </img>
+                <a
+                  class="card-project__container__img-link-container__link"
+                  
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Nuestras chicas en el podio de los 10 k Sonder!!!</a
+                >
+              </div>
+              
+            </div>
+            <div class="card-project__container">
+              <div class="card-project__container__img-link-container">
+                <img
+                  class="card-project__container__img-link-container__img video-frame"
+                  src="img/comunidad 1.png"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </img>
+                <a
+                  class="card-project__container__img-link-container__link"
+                  
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >La mas grosa!! Juli compitiendo en el campeonato nacional de levantamiento de pesas</a
+                >
+              </div>
+              
+            </div>
+            <div class="card-project__container">
+              <div class="card-project__container__img-link-container">
+                <img
+                  class="card-project__container__img-link-container__img video-frame"
+                  src="img/comunidad4.png"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </img>
+                <a
+                  class="card-project__container__img-link-container__link"
+                 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Nuestros clientes felices de competir en el deporte que mas les gusta!!</a
+                >
+              </div>
+              
+            </div>
+            
+            
+          </div>
+          <img
+            class="projects__container__siguiente"
+            src="./img/flecha-rigth.png"
+            alt="siguiente"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACTANOS-->
+
+    <section id="contacto" class="contacto">
+      <div class="contacto__container">
+        <h3 class="contacto__container__title">¡CONTACTANOS!</h3>
+        <div class="conteinerRedesLogos">
+          <div class="containerUnLogo">
+            <a class="logoslink" href="https://www.whatsapp.com"
+            target="_blank"
+              ><img class="logos" src="./img/wpp.png" alt="" /><a
+                href="https://www.whatsapp.com"
+                class="btn btn-outline-danger"
+                target="_blank"
+                >Hace click aqui para chatear</a
+              ></a >
+              <p p class="contactoP">O escribinos al: xxx-xxxxxxxx</p>
+          </div>
+          
+          <div class="containerUnLogo">
+            <a class="logoslink" href="https://www.rebtel.com/es/campana/llamadas-internacionales/?currency=usd&utm_source=google&utm_medium=cpc&utm_campaign=search_row_generic_calling_spanish&utm_content=80166515187_378784863063&utm_term=llamar%20a%20celular%20por%20internet&gad_source=1&gclid=CjwKCAiA1MCrBhAoEiwAC2d64Q0hzYeOhQeINYlX7u-cOQRrDq0ZmlCnp2NWutH-KNvGd7HydtXLYhoCeV0QAvD_BwE"
+            target="_blank"
+             ><img class="logos" src="./img/llamada.png" alt="" /><a
+               href="https://www.rebtel.com/es/campana/llamadas-internacionales/?currency=usd&utm_source=google&utm_medium=cpc&utm_campaign=search_row_generic_calling_spanish&utm_content=80166515187_378784863063&utm_term=llamar%20a%20celular%20por%20internet&gad_source=1&gclid=CjwKCAiA1MCrBhAoEiwAC2d64Q0hzYeOhQeINYlX7u-cOQRrDq0ZmlCnp2NWutH-KNvGd7HydtXLYhoCeV0QAvD_BwE"
+               class="btn btn-outline-info" target="_blank"
+               >Hace click aqui para llamarnos </a
+             ></a
+           ><p class="contactoP">O llamanos al: xxx-xxxxxxxx</p>
+          </div>
+          
+          <div class="containerUnLogo">
+            <a class="logoslink" href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"
+            ><img class="logos" src="./img/correo-electronico.png" alt="" 
+            /><a
+              href="https://www.google.com/intl/es-419/gmail/about/"
+              class="btn btn-outline-info" target="_blank"
+              >Hace click aqui para mandarnos un mail </a
+            ></a
+           ><p p class="contactoP">O mandanos un mail al: megagim@gmail.com</p>
+           
+          </div>
+         
+        </div>
+            
+       <!--     <div class="contenedor-form__fieldset">
+              <label class="contenedor-form__label" for="email-input"
+                ><img src="Img/llamada.png" alt="numero de tel" class="icono" />Llamanos al: xxxx-xxxxxxxx</label
+              >
+
+              <input
+                class="contenedor-form__input-text"
+                id="email-input"
+                name="email"
+                type="text"
+              />
+            </div>
+            <div class="contenedor-form__fieldset">
+              <label class="contenedor-form__label msj" for="message-input"
+                > <img
+                src="Img/correo-electronico.png"
+                alt="correo electronico"
+                class="icono"
+              />Mandanos un email: megagim@gmail.com</label
+              >
+              <textarea
+                class="contenedor-form__textarea"
+                id="message-input"
+                name="msj"
+              ></textarea>
+            </div>
+            <div class="contenedor-form__button-section">
+              <button class="button">Enviar</button>
+            </div>
+         
+        </div>
+        -->  
+      </div>
+    </section>
+
+
+
+<!--FOOTER-->
+
+    <div class="footer">
+      <img
+        class="footer__logo"
+        src="./img/local.png"
+        alt="Logo Megagym"
+      />
+      <img
+      class="footer__logo"
+      src="./img/localizacion mapa.png"
+      alt="Logo Megagym"
+    />
+    <div class="footerRedes">
+      <div class="footer__links">Hace click y conoce nuestras redes sociales:
+        <div class="footer__links__container">
+          <img
+            class="footer__links__container__logo"
+            src="./img/fb (1).png"
+            alt="Facebook"
+          />
+          <a
+            class="footer__links__container__link"
+            href="https://www.facebook.com"
+            target="_blank"
+            >Facebook</a
+          >
+        </div>
+        <div class="footer__links__container">
+          <img
+            class="footer__links__container__logo"
+            src="./img/instagram.png"
+            alt="Instagram"
+           
+          />
+          <a
+            class="footer__links__container__link"
+            href="https://www.instagram.com"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+        
+        </div>
+    </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
